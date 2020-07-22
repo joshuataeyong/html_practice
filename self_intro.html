@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이엠 그라운드 자기소개하기</title>
+    <style>
+        h1{
+            padding-top: 40px;
+            text-align:center;
+        }
+        form{
+            border: 3px solid rgb(218, 190, 32);
+            text-align: center;
+            border-radius: 10px;
+            display: inline;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 40px;
+            box-shadow: 10px 15px 20px rgba(255, 217, 0, 0.404);
+        }
+        button{
+            border: solid 3px rgb(206, 182, 50);
+            border-radius: 5px;
+            background-color: goldenrod;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>아이엠 그라운드 자기소개~ 하! 기!</h1>
+    <form action:'아무곳' >
+        <label for='user_id'>아이디:</label> 
+        <input 
+        type='text' 
+        id="user_id" 
+        name="userid"
+        placeholder='아이디를 입력해주세요'/>
+        <br/>
+        <br/>
+        <label for='user_pw'>비밀번호:</label> 
+        <input
+        id="user_pw"
+        type="password"
+        name="userpw"
+        placeholder="비밀번호를 입력해주세요"/>
+        <br/>
+        <br/>
+        <br/>
+        <label for='pw_question'>비밀번호 질문을 선택하세요!</label>
+        <br/>
+        <br/>
+        <select name="pw_question">
+            <option value="태어난곳">태어난 곳은?</option>
+            <option value="첫강아지">처음으로 키운 강아지 이름은?</option>
+            <option value="첫장소"">첫키스 장소는?</option>
+        </select>
+        <br/>
+        <br/>
+        <button>눌러봐</button>
+        <br/>
+        <br/>
+        <br/>
+        <textarea name='content'>자기소개 하기</textarea>
+    </form>
+</body>
+</html>
